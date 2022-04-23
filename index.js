@@ -23,6 +23,7 @@ button.addEventListener('click', () => {
 
     let rasnumber = Math.floor(Math.random() * 100)
         if (rasnumber == input.value) {
+            result1.classList.remove('text-danger')
             result1.classList.add('text-success')
             result1.innerHTML = 'True'
             result2.innerHTML = `${rasnumber}`
